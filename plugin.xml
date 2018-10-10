@@ -27,7 +27,7 @@
         <source-file src="src/ios/CameraViewController.m"/>
     </platform>
     <platform name="android">
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="app/src/main/res/xml/config.xml">
             <feature name="cordova-gmv-barcode-scanner">
                 <param name="android-package" value="com.dealrinc.gmvScanner.CDVAndroidScanner"/>
             </feature>
