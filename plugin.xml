@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-gmv-barcode-scanner" version="1.2" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="cordova-gmv-barcode-scanner" version="1.3" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-gmv-barcode-scanner</name>
     <js-module name="cordova-gmv-barcode-scanner" src="www/main.js">
@@ -44,12 +44,7 @@
                     android:name="com.google.android.gms.vision.DEPENDENCIES"
                     android:value="barcode" />
 
-            <activity android:label="@string/title_activity_main" android:name="com.dealrinc.gmvScanner.SecondaryActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                </intent-filter>
-            </activity>
+            <activity android:label="@string/title_activity_main" android:name="com.dealrinc.gmvScanner.SecondaryActivity"/>
             <activity android:label="Read Barcode" android:name="com.dealrinc.gmvScanner.BarcodeCaptureActivity" android:theme="@style/Theme.AppCompat.Light"/>
         </config-file>
 
@@ -64,12 +59,7 @@
                     android:name="com.google.android.gms.vision.DEPENDENCIES"
                     android:value="barcode" />
 
-            <activity android:label="@string/title_activity_main" android:name="com.dealrinc.gmvScanner.SecondaryActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                </intent-filter>
-            </activity>
+            <activity android:label="@string/title_activity_main" android:name="com.dealrinc.gmvScanner.SecondaryActivity"/>
             <activity android:label="Read Barcode" android:name="com.dealrinc.gmvScanner.BarcodeCaptureActivity" android:theme="@style/Theme.AppCompat.Light"/>
         </config-file>
 
@@ -78,7 +68,7 @@
             <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
             <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
             <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
-            <string name="title_activity_main">Barcode Reader Sample</string>
+            <string name="title_activity_main">Barcode Reader Activity</string>
             <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
             <string name="read_barcode">Read Barcode</string>
             <string name="auto_focus">Auto Focus</string>
